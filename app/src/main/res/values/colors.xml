@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    // image side
+    <color name="colorAccent">#C9CEEE</color>
+
+    // background of the application
+    <color name="colorAccent2">#1A2484</color>
+    <color name="colorAccent3">#1F488A</color>
+    <color name="colorAccent4">#1B3179</color>
+
+    // for the button
+    <color name="colorAccent5">#FFC213</color>
+    <color name="colorAccent6">#FDCB09</color>
+
+    // for the image
+    <color name="colorAccent7">#E5E68A</color>
+</resources>
