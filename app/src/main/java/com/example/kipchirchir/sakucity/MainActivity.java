@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity{
         songLists =new ArrayList<>();
 
 
-        for (int i = 0; i <10 ; i++) {
+        for (int i = 0; i <100 ; i++) {
 
-            Song song =new Song("Home","rhumba","awilo");
+            Song song =new Song("WOga wako","Gospel","Rose huhando",R.drawable.ic_arrow_forward_black_24dp);
 
 
             songLists.add(song);

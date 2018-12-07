@@ -4,11 +4,20 @@ package com.example.kipchirchir.sakucity;
         public  String title;
         private String genre;
         private String byWho;
+        private int imageId;
 
-        public Song(String title, String genre, String byWho) {
+        public Song(String title, String genre, String byWho, int imageId) {
             this.title = title;
             this.genre = genre;
             this.byWho = byWho;
+        }
+
+        public int getImageId() {
+            return imageId;
+        }
+
+        public void setImageId(int imageId) {
+            this.imageId = imageId;
         }
 
         public String getTitle() {

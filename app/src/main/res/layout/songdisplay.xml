@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorAccent"
     android:id="@+id/relativelayout">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/song_image"
+        android:layout_centerHorizontal="true"/>
 
     <android.support.v7.widget.AppCompatSpinner
             android:layout_width="48dp"
@@ -15,7 +21,9 @@
             android:id="@+id/dropdown_options_spinner"
             android:soundEffectsEnabled="true"
             android:addStatesFromChildren="true"
+            android:layout_below="@+id/song_image"
             android:dropDownSelector="@drawable/song_namebackgroung"/>
+
 
     <TextView
             android:id="@+id/textdisplayspinnercontent"
@@ -26,17 +34,19 @@
             android:layout_toEndOf="@+id/dropdown_options_spinner"
             android:layout_marginLeft="30dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+        android:layout_below="@+id/song_image"/>
 
     <TextView
         android:id="@+id/song_name"
         android:layout_width="340dp"
-        android:layout_height="48dp"
+        android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/song_namebackgroung"
-        android:hint="@string/song_name_here" />
+        android:hint="@string/song_name_here"
+        android:layout_below="@+id/dropdown_options_spinner"/>
 
     <TextView
         android:id="@+id/song_bywho"
@@ -47,20 +57,27 @@
         android:layout_alignLeft="@+id/dropdown_options_spinner"
         android:layout_marginStart="9dp"
         android:layout_marginLeft="9dp"
-        android:layout_marginTop="118dp"
         android:background="@drawable/song_namebackgroung"
         android:hint="@string/song_name_here" />
 
-    <Button
-        android:id="@+id/play"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/song_bywho"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="190dp"
-        android:text="@string/play"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_alignParentLeft="true" />
 
+    <android.support.v7.widget.CardView
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="@color/colorAccent7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/song_bywho">
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
