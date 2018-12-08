@@ -6,18 +6,11 @@
     <string name="this_the_logo">This the logo</string>
     <string name="username">userName</string>
     <string name="password">password</string>
-    <string name="song_name_here">song name here</string>
+    <string name="song_name_here">Song name</string>
     <string name="play">Play</string>
     <string name="what_is_good_for_the_goose_is_good_for_the_gander">what is good for the goose is good for the gander</string>
     <string name="options_to_choose">options to choose</string>
+    <string name="song_genre">Song genre</string>
+    <string name="artist_name">Artist name</string>
 
-    <string-array name="dropdown_menu">
-        <item>Local</item>
-        <item>Rhumba</item>
-        <item>Gospel</item>
-        <item>Reggea</item>
-        <item>Country</item>
-        <item>Lingala</item>
-
-    </string-array>
 </resources>

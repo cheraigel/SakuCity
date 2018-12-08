@@ -7,6 +7,7 @@ package com.example.kipchirchir.sakucity;
         private int imageId;
 
         public Song(String title, String genre, String byWho, int imageId) {
+            this.imageId =imageId;
             this.title = title;
             this.genre = genre;
             this.byWho = byWho;

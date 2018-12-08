@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
 
         for (int i = 0; i <100 ; i++) {
 
-            Song song =new Song("WOga wako","Gospel","Rose huhando",R.drawable.ic_arrow_forward_black_24dp);
+            Song song =new Song("Kinyuolo woiyi","Ohangla","Musa Jakadala",R.drawable.monkey_shoulder);
 
 
             songLists.add(song);

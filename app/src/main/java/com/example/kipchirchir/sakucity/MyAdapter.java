@@ -39,7 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         viewHolder.title.setText(song.getTitle());
         viewHolder.songbywho.setText(song.getByWho());
         viewHolder.genre.setText(song.getGenre());
-        viewHolder.image.setImageResource(R.drawable.ic_arrow_forward_black_24dp);
+        viewHolder.image.setImageResource(song.getImageId());
     }
 
     @Override
@@ -59,9 +59,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             super(itemView);
 
             songbywho =(TextView)itemView.findViewById(R.id.song_bywho);
-            title=(TextView)itemView.findViewById(R.id.song_name);
-            genre =(TextView)itemView.findViewById(R.id.textdisplayspinnercontent);
-            options =(Spinner)itemView.findViewById(R.id.dropdown_options_spinner);
+            title=(TextView)itemView.findViewById(R.id.song_title);
+            genre =(TextView)itemView.findViewById(R.id.song_genre);
             image =(ImageView)itemView.findViewById(R.id.song_image);
         }
     }
