@@ -17,4 +17,7 @@
 
     // for the image
     <color name="colorAccent7">#E5E68A</color>
+    //white color
+    <color name="colorAccent0">#ffffff</color>
+
 </resources>

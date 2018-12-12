@@ -1,99 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:background="@color/colorAccent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/colorAccent2"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="120dp"
-            android:src="@drawable/monkey_shoulder"
-            android:layout_gravity="center"
-            android:contentDescription="@string/this_the_logo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="160dp"
+                android:background="@color/colorAccent0"
+                android:elevation="16dp" />
+
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="160dp"
+                android:background="@color/colorAccent0"
+                android:elevation="16dp" />
+
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@color/colorAccent5"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/this_the_logo"
-            android:elevation="16dp"
-            android:src="@drawable/monkey_shoulder" />
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="8dp"
-            android:src="@drawable/monkey_shoulder"
-            android:contentDescription="@string/this_the_logo"/>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@color/colorAccent5"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="8dp"
-            android:src="@drawable/monkey_shoulder"
-            android:contentDescription="@string/this_the_logo"/>
-
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elevation="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="8dp"
-            android:src="@drawable/monkey_shoulder"
-            android:contentDescription="@string/this_the_logo"/>
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

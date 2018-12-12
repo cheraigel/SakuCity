@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 public class item_display extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
